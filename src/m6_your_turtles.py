@@ -2,10 +2,10 @@
 Your chance to explore Loops and Turtles!
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
+         Aaron Wilkin, their colleagues, and Nelson Rainey.
 """
 ########################################################################
-# TODO: 1.
+# DONE: 1.
 #   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ########################################################################
 
@@ -28,3 +28,53 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #   Don't forget to COMMIT-and-PUSH when you are done with this module.
 #
 ########################################################################
+
+import rosegraphics as rg
+
+
+nelson= rg.SimpleTurtle()
+nelson.pen=rg.Pen('blue',10)
+nelson.speed= 3
+
+size = 150
+
+for k in range(2):
+    nelson.draw_square(150)
+    nelson.pen_up()
+    nelson.right(180)
+    nelson.forward(200)
+    nelson.right(90)
+
+
+
+
+    nelson.pen_down()
+
+for j in range(1):
+    nelson.pen_up()
+
+    nelson.left(90)
+    nelson.forward(100)
+
+    nelson.pen_down()
+
+    nelson.draw_circle(130)
+
+nick=rg.SimpleTurtle()
+nick.pen=rg.Pen('brown',5)
+nick.speed = 2
+
+for k in range(1):
+    nick.pen_up()
+    nick.forward(75)
+    nick.left(90)
+    nick.forward(75)
+    nick.pen_down()
+    nick.draw_circle(10)
+    nick.pen_up()
+    nick.left(90)
+    nick.forward(350)
+    nick.pen_down()
+    nick.draw_circle(10)
+
+
